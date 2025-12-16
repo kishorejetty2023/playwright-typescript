@@ -1,43 +1,44 @@
 {
-    "name": "playwright-typescript",
-    "version": "2.1.0",
-    "description": "An example tutorial for Playwright TypeScript",
-    "type": "commonjs",
-    "scripts": {
-        "lint": "eslint",
-        "lint:fix": "eslint --fix",
-        "prettier": "prettier --check",
-        "prettier:fix": "prettier --write",
-        "prettier:lint:fix": "npm run prettier:fix && npm run lint:fix",
-        "codegen": "playwright codegen --channel=chrome https://applitools.com/helloworld.html",
-        "test:debug": "playwright test --debug",
-        "test:dev": "cross-env TEST_ENV=dev playwright test --project chromium",
-        "test:sit": "cross-env TEST_ENV=sit playwright test --project chromium",
-        "test:uat": "cross-env TEST_ENV=uat playwright test --project chromium",
-        "test:prod": "cross-env TEST_ENV=prod playwright test --project chromium",
-        "test:functional:dev": "cross-env TEST_ENV=dev playwright test --project chromium --grep @functional",
-        "test:functional:sit": "cross-env TEST_ENV=sit playwright test --project chromium --grep @functional",
-        "test:smoke:dev": "cross-env TEST_ENV=dev playwright test --project chromium --grep @smoke",
-        "test:smoke:sit": "cross-env TEST_ENV=sit playwright test --project chromium --grep @smoke"
-    },
-    "author": "Kishore Jetty",
-    "private": true,
-    "devDependencies": {
-        "@playwright/test": "^1.57.0",
-        "@types/crypto-js": "^4.2.2",
-        "@types/node": "^25.0.2",
-        "@typescript-eslint/eslint-plugin": "^8.50.0",
-        "@typescript-eslint/parser": "^8.50.0",
-        "cross-env": "^7.0.3",
-        "crypto-js": "^4.2.0",
-        "eslint": "^9.39.2",
-        "eslint-config-prettier": "^10.1.5",
-        "eslint-plugin-playwright": "^2.3.0",
-        "playwright": "^1.57.0",
-        "prettier": "^2.8.8",
-        "typescript": "^5.1.6"
-    },
-    "dependencies": {
-        "dotenv": "^17.2.3"
-    }
+  "name": "playwright-typescript",
+  "version": "2.1.0",
+  "description": "An example tutorial for Playwright TypeScript",
+  "type": "commonjs",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write",
+    "prettier:lint:fix": "npm run prettier:fix && npm run lint:fix",
+    "codegen": "playwright codegen --channel=chrome https://applitools.com/helloworld.html",
+    "test:debug": "playwright test --debug",
+    "test:dev": "cross-env TEST_ENV=dev playwright test --project chromium",
+    "test:sit": "cross-env TEST_ENV=sit playwright test --project chromium",
+    "test:uat": "cross-env TEST_ENV=uat playwright test --project chromium",
+    "test:prod": "cross-env TEST_ENV=prod playwright test --project chromium",
+    "test:functional:dev": "cross-env TEST_ENV=dev playwright test --project chromium --grep @functional",
+    "test:functional:sit": "cross-env TEST_ENV=sit playwright test --project chromium --grep @functional",
+    "test:smoke:dev": "cross-env TEST_ENV=dev playwright test --project chromium --grep @smoke",
+    "test:smoke:sit": "cross-env TEST_ENV=sit playwright test --project chromium --grep @smoke"
+  },
+  "author": "Kishore Jetty",
+  "private": true,
+  "devDependencies": {
+    "@eslint/js": "^8.57.1",
+    "@playwright/test": "^1.57.0",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^25.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/parser": "^8.50.0",
+    "cross-env": "^7.0.3",
+    "crypto-js": "^4.2.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-playwright": "^2.3.0",
+    "playwright": "^1.57.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
 }
