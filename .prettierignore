@@ -1,0 +1,55 @@
+# Ignore dependencies and build outputs
+node_modules/
+dist/
+build/
+coverage/
+.nyc_output
+
+# Ignore compiled / minified assets
+*.min.js
+*.bundle.js
+*.map
+
+# Lockfiles (not useful to format)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Playwright artifacts
+playwright-report/
+test-results/
+traces/
+videos/
+screenshots/
+playwright-trace.zip
+
+# Editor / IDE
+.vscode/
+.vscode-test/
+.idea/
+
+# Logs, caches, temp
+logs/
+*.log
+tmp/
+temp/
+
+# Snapshots / caches
+__snapshots__/
+.snapshots/
+.snap/
+
+# TypeScript build info and env files
+*.tsbuildinfo
+.env
+.env.local
+.env.*.local
+# playwright specific
+node_modules/
+test-results/
+dist/out-tsc/
+playwright-report/
+
+# IDE - VSCode
+.vscode/
+.vscode-test/

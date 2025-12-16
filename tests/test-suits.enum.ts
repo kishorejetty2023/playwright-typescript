@@ -1,3 +1,3 @@
 export enum TestSuites {
-    NAVIGATION = 'AppName_Navigation',
+  NAVIGATION = 'AppName_Navigation',
 }
